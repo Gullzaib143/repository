@@ -45,6 +45,11 @@ body{
 .button{
     margin-top: 1vw;
 }
+.button input{
+    border: 0.1vw solid #001ce6f2;
+    border-radius: 0.2vw;
+    height: 2vw;
+}
 .btn-updated{
     background: linear-gradient(0.25turn, #3F51B5, #b228ea);
     border: 0.1vw solid wheat;
@@ -53,6 +58,7 @@ body{
     font-weight: bold;
     color: white;
     font-size: 0.9vw;
+    margin-left: 0.2vw;
 }
 .btn-explore{
     height: 2vw;

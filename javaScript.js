@@ -8,7 +8,7 @@ function init() {
   });
 
   
-  root.renderer.setClearColor(0x2a2a2a01, 00);
+  root.renderer.setClearColor(0x000000);
   root.renderer.setPixelRatio(window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 600);
 

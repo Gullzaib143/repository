@@ -16,11 +16,12 @@ body{
     height: 15vh;
 }
 #three-container{
-    height: 14vh;
+    height: 40vh;
 }
 #three-container canvas{
-    height: 25vh !important;
-    width: 70.2vw !important
+    height: 60vh !important;
+    width: 70.2vw !important;
+    margin-top: -20vh;
 }
 .bg-img{
     background-color: black;

@@ -36,8 +36,8 @@ function init() {
 
 function createTextAnimation() {
   var geometry = generateTextGeometry('ALPHA SQUAD', {
-    size:80,
-    height:62,
+    size:40,
+    height:12,
     font:'droid sans',
     weight:'bold',
     style:'normal',

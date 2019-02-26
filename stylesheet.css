@@ -13,12 +13,14 @@ body{
 .anime{
     display: flex;
     justify-content: center;
-    height: 5vw;
+    height: 15vh;
+}
+#three-container{
+    height: 14vh;
 }
 #three-container canvas{
-    height: 10vw !important;
-    width: 82.2vw !important;
-    padding-right: 1.6vw !important;
+    height: 25vh !important;
+    width: 70.2vw !important
 }
 .bg-img{
     background-color: black;

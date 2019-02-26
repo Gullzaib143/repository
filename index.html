@@ -3,15 +3,26 @@
             <title>
                     Alpha Squad
              </title>
+             <link rel="stylesheet" type="text/css" href="styleSheet-anime.css">  
             <link rel="stylesheet" type="text/css" href="stylesheet.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+            <script>
+                    THREE.ShapeUtils.triangulateShape = (function () {
+                            var pnlTriangulator = new PNLTRI.Triangulator();
+                            return function triangulateShape(contour, holes) {
+                                return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+                            };
+                        })();
+            </script>
         <section class="head">
             <div class="bg-img">
+                <div class="anime">
+                        <div id="three-container"></div>
+                </div>
                 <div class="front-upper">
                     <h1>
-                        ALPHA SQUAD <BR>
                             WE'RE COMING SOON
                     </h1>
                     <P>
@@ -26,5 +37,16 @@
                 </div>
             </div>
         </section>
+
+        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+        <script type="text/javascript" src="javaScript.js"></script>  
+        <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
     </body>
 </html>

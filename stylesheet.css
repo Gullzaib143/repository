@@ -1,7 +1,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
-    margin: 0vw;
+
 }
 .head{
     width: 100%;
@@ -9,7 +9,17 @@ body{
    
 }
 
-
+.anime{
+    display: flex;
+    justify-content: center;
+    height: 5vw;
+}
+#three-container canvas{
+    height: 9vw !important;
+    width: 82.2vw !important;
+    opacity: 0.3 !important;
+    padding-right: 1.6vw !important;
+}
 .bg-img{
     background-image: url("full.jpg");
     width: 100%;
@@ -29,6 +39,7 @@ body{
     flex-direction: column;
     text-align: center;
     color: #ffffffd9;
+    z-index: 0;
 }
 .front-upper h1{
     font-size: 4vw;
@@ -49,6 +60,7 @@ body{
     border: 0.1vw solid #001ce6f2;
     border-radius: 0.3vw;
     height: 2vw;
+    width: 17vw;
 }
 .btn-updated{
     background: linear-gradient(0.25turn, #3F51B5, #b228ea);
